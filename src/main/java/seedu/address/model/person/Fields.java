@@ -134,4 +134,15 @@ public class Fields {
         fields.forEach(builder::append);
         return builder.toString();
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        } else if (obj instanceof Fields) {
+            Fields f = (Fields) obj;
+            return fields.equals(f.fields);
+        }
+        return false;
+    }
 }

@@ -25,6 +25,7 @@ public class AddFieldCommandParser implements Parser<AddFieldCommand> {
      */
     public AddFieldCommand parse(String args) throws ParseException {
 
+        assert(false);
         final Matcher matcher = ADD_FIELD_COMMAND_FORMAT.matcher(args.trim());
 
         if (!matcher.matches()) {
